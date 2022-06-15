@@ -1,0 +1,52 @@
+@use "../utils/" as u;
+.destn-card {
+  color: var(--Destn-card);
+  display: flex;
+  padding: 1rem;
+  &__info {
+    padding: 1rem 1.8rem;
+    width: 580px;
+  }
+  &__photo {
+    width: 200px;
+    height: 260px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  &__loc {
+    display: flex;
+    align-items: center;
+  }
+  .loc-icon {
+    width: 14px;
+    margin-right: 0.5rem;
+  }
+  &__country {
+    margin-right: 1rem;
+    font-weight: 600;
+    font-size: u.rem(18);
+    letter-spacing: u.rem(2);
+    text-transform: uppercase;
+  }
+
+  .gmaps {
+    font-size: u.rem(16);
+    text-decoration: underline;
+    color: var(--Gmaps);
+  }
+  &__title {
+    margin-top: 1rem;
+    font-size: u.rem(40);
+  }
+  &__dates {
+    margin-top: 2.2rem;
+    font-size: u.rem(16);
+  }
+  &__description {
+    font-size: u.rem(16);
+    line-height: 1.5;
+  }
+  &:hover {
+    background-color: whitesmoke;
+  }
+}

@@ -1,0 +1,9 @@
+.destn-list {
+  display: block;
+  margin-top: 2rem;
+  hr {
+    margin-block: 1rem;
+    border: 0;
+    border-top: 1px solid var(--Hr);
+  }
+}
